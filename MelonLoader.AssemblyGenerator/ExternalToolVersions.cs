@@ -8,6 +8,6 @@ namespace MelonLoader.AssemblyGenerator
         public static string Il2CppAssemblyUnhollowerVersion = "0.4.9.1";
         public static string Il2CppAssemblyUnhollowerUrl = "https://github.com/knah/Il2CppAssemblyUnhollower/releases/download/v" + Il2CppAssemblyUnhollowerVersion + "/Il2CppAssemblyUnhollower." + Il2CppAssemblyUnhollowerVersion + ".zip";
         
-        public static string UnityDependenciesBaseUrl = "https://github.com/HerpDerpinstine/MelonLoader/raw/master/BaseLibs/UnityDependencies/";
+        public static string UnityDependenciesBaseUrl = "https://github.com/Joeyjoe9876/MelonLoader/tree/master/BaseLibs/UnityDependencies/";
     }
 }

@@ -324,7 +324,7 @@ namespace MelonLoader.Installer
                 SetDisplayText("Downloading Dependencies...");
                 string tempfilepath4 = TempFileCache.CreateFile();
                 bool run_fallback = false;
-                try { webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/MelonLoader/raw/master/BaseLibs/UnityDependencies/" + mainForm.UnityVersion + ".zip"), tempfilepath4); while (webClient.IsBusy) { } } catch (Exception ex) { run_fallback = true; }
+                try { webClient.DownloadFileAsync(new Uri("https://github.com/Joeyjoe9876/MelonLoader/tree/master/BaseLibs/UnityDependencies/" + mainForm.UnityVersion + ".zip"), tempfilepath4); while (webClient.IsBusy) { } } catch (Exception ex) { run_fallback = true; }
                 if (run_fallback)
                 {
                     string subver = mainForm.UnityVersion.Substring(0, mainForm.UnityVersion.LastIndexOf("."));
@@ -342,7 +342,7 @@ namespace MelonLoader.Installer
                         {
                             versionlist = versionlist.OrderBy(x => int.Parse(x.Split(new char[] { '.' })[2])).ToList();
                             string latest_version = versionlist.Last();
-                            webClient.DownloadFileAsync(new Uri("https://github.com/HerpDerpinstine/MelonLoader/raw/master/BaseLibs/UnityDependencies/" + latest_version + ".zip"), tempfilepath4);
+                            webClient.DownloadFileAsync(new Uri("https://github.com/Joeyjoe9876/MelonLoader/tree/master/BaseLibs/UnityDependencies/" + latest_version + ".zip"), tempfilepath4);
                             while (webClient.IsBusy) { }
                         }
                     }
